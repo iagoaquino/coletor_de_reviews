@@ -1,0 +1,104 @@
+#:kivy 2.0.0
+<Tela>:
+    BoxLayout:
+        size_hint: (1,1)
+        id:final
+        orientation: "vertical"
+        BoxLayout:
+            orientation: "vertical"
+            BoxLayout:
+                orientation: "vertical"
+            TextInput:
+                padding: 10
+                size_hint: (1,0.2)
+                hint_text: "digite o codigo do jogo"
+                id: codigo_jogo
+        GridLayout:
+            size_hint: (1,0.5)
+            cols:4
+            id: selecionador
+            padding:20
+        BoxLayout:
+            id:finalizador
+            orientation: "horizontal"
+            padding:10
+<FilterDropDown>:
+    Button:
+        text:"recent"
+        id: recent
+        size_hint_y: None
+        height: 40
+        on_release: root.select("recent")
+    Button:
+        text:"updated"
+        id: updated
+        size_hint_y: None
+        height: 40
+        on_release: root.select("updated")
+    Button:
+        text:"all"
+        id: all
+        size_hint_y: None
+        height: 40
+        on_release: root.select("all")
+    
+
+<LanguageDropDown>:
+    Button:
+        text:"english"
+        id: english
+        size_hint_y: None
+        height: 40
+        on_release: root.select("english")
+    Button:
+        text:"brazilian"
+        id: brazilian
+        size_hint_y: None
+        height: 40
+        on_release: root.select("brazilian")
+
+<TypeDropDown>:
+    Button:
+        text:"positive"
+        id: positive
+        size_hint_y: None
+        height: 40
+        on_release: root.select("positive")
+    Button:
+        text:"negative"
+        id: negative
+        size_hint_y: None
+        height: 40
+        on_release: root.select("negative")
+    Button:
+        text:"all"
+        id: all_type
+        size_hint_y: None
+        height: 40
+        on_release: root.select("all")
+
+<LimiteDropDown>:
+    Button:
+        text:"10"
+        id: 10
+        size_hint_y: None
+        height: 40
+        on_release: root.select("10")
+    Button:
+        text:"100"
+        id: 100
+        size_hint_y: None
+        height: 40
+        on_release: root.select("100")
+    Button:
+        text:"1000"
+        id: 1000
+        size_hint_y: None
+        height: 40
+        on_release: root.select("1000")
+        
+        
+
+                    
+                    
+                
